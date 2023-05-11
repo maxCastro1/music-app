@@ -20,7 +20,7 @@ export const deezerApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://deezerdevs-deezer.p.rapidapi.com/',
     prepareHeaders: (headers) => {
-      headers.set('X-RapidAPI-Key', rapidApiKey);
+      headers.set('X-RapidAPI-Key', '9bece3b8fdmsh89b1642ae0498dap1cd0d2jsnefcbd32769b3');
       headers.set('X-RapidAPI-Host', 'deezerdevs-deezer.p.rapidapi.com');
       return headers;
     }
