@@ -11,7 +11,6 @@ const Discover = () => {
   const {activeSong, isPlaying } = useSelector((state)=> state.player);
   const { data, isFetching, error } = useGetsongsgenreQuery(genreListId);
   const genreTitle = genres.find(({ value }) => value === genreListId)?.title;
-  console.log(data?.data)
   if(isFetching) return <Loader title="Loading songs ..."/>
   if (data.error) return <Error />;
   return(
